@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENCUESTA DE SATISFACCIÓN"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre" />
+
+    <EditText
+        android:id="@+id/edit_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese su nombre" />
+
+    <TextView
+        android:id="@+id/text_satisfaccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nivel de Satisfacción: 5" />
+
+    <SeekBar
+        android:id="@+id/seekbar_satisfaccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:progress="5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comentarios" />
+
+    <EditText
+        android:id="@+id/edit_comentarios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese sus comentarios"
+        android:lines="4"
+        android:gravity="top"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/button_enviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
